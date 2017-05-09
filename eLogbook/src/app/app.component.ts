@@ -48,7 +48,6 @@ export class MyApp {
 	  { title: 'Report an Issue', component: ReportIssues },
 	  
     ];
-
   }
   initializeApp() {
     this.platform.ready().then(() => {

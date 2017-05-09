@@ -28,7 +28,7 @@
             <ion-label floating>Password</ion-label>
             <ion-input type="password"></ion-input>
           </ion-item>
-          <button ion-button block color="primary" (click)=" navigate()" >Sign In</button>
+          <button ion-button block color="primary" [navPush]="homePage">Sign In</button>
           <a> Forgot your Password? <b> Reset password here </b></a>
       </ion-list>
     </ion-card-content>

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-
+import { DomainDashboard } from '../domain-dashboard/domain-dashboard';
 
 /**
  * Generated class for the DomainSetting page.
@@ -12,11 +11,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-domain-setting',
-  templateUrl: 'domain-setting.html',
- 
-  
+  templateUrl: 'domain-setting.html',  
 })
 export class DomainSetting {
+	
+	dashBoardPage = DomainDashboard;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
