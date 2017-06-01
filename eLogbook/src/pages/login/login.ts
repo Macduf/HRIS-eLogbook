@@ -1,20 +1,19 @@
 import { Component } from '@angular/core';
 
 //new providers
-import {OrganisationUnit} from "../../providers/organisation-unit";
-import {SqlLite} from "../../providers/sql-lite";
+
 import {HttpClient} from "../../providers/http-client";
-import {HttpModule   } from '@angular/http';
+import {Synchronization} from "../../providers/synchronization";
+import {SqlLite} from "../../providers/sql-lite";
+import {OrganisationUnit} from "../../providers/organisation-unit";
+import {NetworkAvailability} from "../../providers/network-availability";
 import {DataSets} from "../../providers/data-sets";
-import {User} from "../../providers/user";
+import {DashboardService} from "../../providers/dashboard-service";
 import {Program} from "../../providers/program";
 import {PeriodService} from "../../providers/period-service";
-import {DashboardService} from "../../providers/dashboard-service";
-
-import { IonicPage, NavController, NavParams, Nav, Platform, ToastController} from 'ionic-angular';
+import {User} from "../../providers/user";
+import { IonicPage, NavController, NavParams, Nav, Platform } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import {Synchronization} from "../../providers/synchronization";
-import {NetworkAvailability} from "../../providers/network-availability";
 
 /**
  * Generated class for the Login page.
@@ -46,8 +45,7 @@ homePage = HomePage;
   //organisationUnit, entryForm,event
 
   constructor(public navCtrl: NavController, 
-  public navParams: NavParams, public OrganisationUnit : OrganisationUnit, public httpClient : HttpClient, public sqlLite : SqlLite,  public DataSets : DataSets,  public PeriodService : PeriodService, public Program : Program, public synchronization:Synchronization, public toastCtrl: ToastController, public NetworkAvailability : NetworkAvailability
-  ) {
+  public navParams: NavParams, public synchronization:Synchronization,public DataSets : DataSets,public Program : Program,public DashboardService: DashboardService, public NetworkAvailability : NetworkAvailability, public httpClient : HttpClient, public OrganisationUnit : OrganisationUnit, public user : User,public sqlLite : SqlLite ) {
   }
   
   ionViewDidLoad() {
