@@ -3,6 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
@@ -43,9 +44,11 @@ export class MyApp {
 	 // { title: 'Dashboard', component: DomainDashboard},
 	 // { title: 'List', component: ListPage },
 	//  { title: 'About', component: About },
+	  { title: 'Login', component: Login },
 	  { title: 'Facility Information', component: SiteInfo },
 	  { title: 'Help', component: Help },
 	  { title: 'Report an Issue', component: ReportIssues },
+	  
 	  
     ];
   }
