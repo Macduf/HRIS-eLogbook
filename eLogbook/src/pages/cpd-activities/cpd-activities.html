@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ObgynProcedureForm page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>OBGYN CPD Activities</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+<form>
+<ion-item>
+  <ion-label>CPD Date</ion-label>
+  <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
+</ion-item>
+
+<ion-list> 
+  <ion-item>
+  <ion-label>CPD Completed</ion-label>
+  <ion-select >
+    <ion-option value="Maternal resuscitation in an
+unconscious patient">Maternal resuscitation in an unconscious patient</ion-option>
+    <ion-option value="Neonatal resuscitation">Neonatal resuscitation</ion-option>
+	<ion-option value="Sepsis">Sepsis</ion-option>
+    <ion-option value="Obstetric Haemorrahage">Obstetric Haemorrahage</ion-option>
+	<ion-option value="Pre-eclampsia/eclampsia">Pre-eclampsia/eclampsia</ion-option>
+	<ion-option value="Miscarriage">Miscarriage</ion-option>
+	<ion-option value="Partogram and obstructed labour">Partogram and obstructed labour</ion-option>
+	<ion-option value="Interpreting CTGs">Interpreting CTGs</ion-option>
+	<ion-option value="Assisted delivery">Assisted delivery</ion-option>
+	<ion-option value="Obstetric emergencies">Obstetric emergencies</ion-option>
+	<ion-option value="Surgical skills">Surgical skills</ion-option>
+	<ion-option value="HIV in pregnancy">HIV in pregnancy</ion-option>	
+  </ion-select>
+</ion-item>
+
+      <ion-item>
+        <ion-label>Patient No.</ion-label>
+        <ion-input type="text" ></ion-input>
+      </ion-item>  
+
+</ion-list>	  
+	     <ion-item>
+        <ion-label>Supervisor HPCSA Reg. No</ion-label>
+        <ion-input type="text" name="supervisorMp"></ion-input>
+      </ion-item>
+	  
+	  	     <ion-item>
+        <ion-label>Supervisor Password</ion-label>
+        <ion-input type="password" name="supervisorMp"></ion-input>
+ </ion-item>
+       <button ion-button type="submit" >Submit</button>
+	   <button ion-button type="cancel" >Cancel</button>
+    </form>
+    
+</ion-content>

@@ -1,0 +1,117 @@
+<!--
+  Generated template for the ObgynProcedureForm page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>OBGYN Domain Survey</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+<form>
+  <ion-item>
+  <ion-label>Please indicate which of the following conditions you were not exposed to:</ion-label>
+  <ion-select multiple="true">
+    <ion-option>Anaemia in Pregnancy</ion-option>
+    <ion-option>Eclampsia</ion-option>
+    <ion-option>Hypertension in Pregnancy</ion-option>
+  </ion-select>
+</ion-item>
+
+      <ion-item>
+        <ion-label>Has there been any form of continuing professional education, other than (teaching)
+ward rounds?</ion-label>
+      <ion-toggle></ion-toggle>
+      </ion-item>  
+
+	    <ion-item>
+  <ion-label>Please indicate which of the following management protocols and clinical guidelines are used in this department:</ion-label>
+  <ion-select multiple="true">
+    <ion-option>EDL</ion-option>
+    <ion-option>HIV Guidelines</ion-option>
+    <ion-option>STD Protocols</ion-option>
+	<ion-option>Other</ion-option>
+    </ion-select>
+</ion-item>
+
+	     <ion-item>
+        <ion-label>Please specify Other management protocols and clinical guidelines:</ion-label>
+        <ion-input type="text" ></ion-input>
+      </ion-item>
+	  
+<ion-list radio-group >
+<ion-grid>
+  <ion-row>
+    <ion-col col-6>
+     Rate the supervision received in this domain	
+    </ion-col>
+    <ion-col col-2>
+     Poor
+    </ion-col >
+    <ion-col col-2>
+     Average
+    </ion-col>	
+	  <ion-col col-2>
+      Good
+    </ion-col>
+  </ion-row>
+  
+    <ion-row>
+    <ion-col col-6>
+    Availability of supervisors at all times
+    </ion-col>
+    <ion-col col-2>
+   <ion-item>
+    <ion-radio value="1"></ion-radio>
+  </ion-item>
+    </ion-col >
+    <ion-col col-2>
+      <ion-item>
+    <ion-radio value="2"></ion-radio>
+  </ion-item>
+    </ion-col>	
+	  <ion-col col-2>
+   <ion-item>
+    <ion-radio value="3"></ion-radio>
+  </ion-item>
+    </ion-col>
+  </ion-row>
+  
+    <ion-row>
+    <ion-col col-6>
+     Quality of supervision received
+    </ion-col>
+    <ion-col col-2>
+   <ion-item>
+    <ion-radio value="1"></ion-radio>
+  </ion-item>
+    </ion-col >
+    <ion-col col-2>
+      <ion-item>
+    <ion-radio value="2"></ion-radio>
+  </ion-item>
+    </ion-col>	
+	  <ion-col col-2>
+   <ion-item>
+    <ion-radio value="3"></ion-radio>
+  </ion-item>
+    </ion-col>
+  </ion-row>
+  
+ </ion-grid>
+</ion-list>
+
+  <ion-item>
+  <ion-label>Do you have any criticisms/suggestions/additions/comments?</ion-label>
+    <ion-textarea ></ion-textarea>
+  </ion-item>
+
+       <button ion-button type="submit" >Submit</button>
+	   <button ion-button type="cancel" >Cancel</button>
+    </form>
+    
+</ion-content>
