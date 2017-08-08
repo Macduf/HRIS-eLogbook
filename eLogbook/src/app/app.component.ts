@@ -67,6 +67,7 @@ export class MyApp {
 	  { title: 'M&M Meetings', component: DomainMortalityMobidity },
 	  { title: 'CPD', component: CpdActivities },	 
 	  { title: 'Domain Survey', component: DomainSurvey },  
+	  { title: 'Conditions/Procedures', component: DomainConditionsExposed },  
 	  
     ];
   }

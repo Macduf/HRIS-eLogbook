@@ -31,6 +31,8 @@ import {DashboardService} from "../providers/dashboard-service";
 import {Program} from "../providers/program";
 import {PeriodService} from "../providers/period-service";
 import {User} from "../providers/user";
+import { IonicStorageModule } from '@ionic/storage';
+
 
 //pages
 import {DomainSignOff} from '../pages/domain-sign-off/domain-sign-off';

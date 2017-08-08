@@ -1,18 +1,78 @@
 <!--
-  Generated template for the DomainConditionsExposed page.
+  Generated template for the ObgynProcedureForm page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>domainConditionsExposed</ion-title>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+  </button>
+    <ion-title>OBGYN Conditions/Procedures</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+<form>
+<ion-item>
+  <ion-label>Date</ion-label>
+  <ion-input type="date" displayFormat="DD/MM/YYYY" name= "conditionsProcedureDate"></ion-input>  
+</ion-item>
 
+<ion-list radio-group >
+<ion-grid>
+  <ion-row>
+    <ion-col col-6>
+     Conditions
+    </ion-col>
+    <ion-col col-3>
+     Mid Block
+    </ion-col >
+    <ion-col col-3>
+    End Block
+    </ion-col>	
+  </ion-row>
+  
+    <ion-row>
+    <ion-col col-6>
+     <ion-item>
+  <ion-label>Procedures Performed</ion-label>
+  <ion-scroll scrollY="true">
+
+  <ion-select >
+    <ion-option *ngFor = "let element of dataElements " >{{element.description}}</ion-option>	
+  </ion-select>
+  </ion-scroll>
+</ion-item>
+    </ion-col>
+    <ion-col col-3>
+         <ion-item>
+      <ion-toggle></ion-toggle>
+      </ion-item>  
+    </ion-col >
+    <ion-col col-3>
+         <ion-item>
+      <ion-toggle></ion-toggle>
+      </ion-item> 
+    </ion-col>	
+  </ion-row> 
+  
+ </ion-grid>
+</ion-list>
+	     <ion-item>
+        <ion-label>Supervisor HPCSA Reg. No</ion-label>
+        <ion-input type="text" name="supervisorMp"></ion-input>
+      </ion-item>
+	  
+	  	     <ion-item>
+        <ion-label>Supervisor Password</ion-label>
+        <ion-input type="password" name="supervisorMp"></ion-input>
+ </ion-item>
+
+       <button ion-button type="submit" >Submit</button>
+	   <button ion-button type="cancel" >Cancel</button>
+    </form>
+    
 </ion-content>

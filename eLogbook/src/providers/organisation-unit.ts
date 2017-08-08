@@ -40,12 +40,8 @@ export class OrganisationUnit {
     this.lastSelectedOrgUnit = null;
   }
 
-  /**
-   * downloadingOrganisationUnitsFromServer
-   * @param orgUnitIds
-   * @param currentUser
-   * @returns {Promise<T>}
-   */
+
+   /**
   downloadingOrganisationUnitsFromServer(orgUnitIds,currentUser){
     let orgUnits= [];
     return new Promise((resolve, reject)=> {
@@ -68,6 +64,32 @@ export class OrganisationUnit {
       }
     });
   }
+  */
+  
+ downloadingOrganisationUnitsFromServer(orgUnitIds,currentUser){
+    let orgUnits= [];
+    return new Promise((resolve, reject)=> {
+      let counts = 0;
+      for(let orgUnitId of orgUnitIds){
+        let fields ="fields=id,name,path,ancestors[id,name],dataSets,programs,level,children[id,name,children[id]],parent";
+        let filter="filter=path:ilike:";
+        let url = "/api/25/"+this.resource+".json?paging=false&";
+        url += fields + "&" + filter + orgUnitId;
+        this.HttpClient.get(url,currentUser).subscribe(response=>{
+          response = response.json();
+          counts = counts + 1;
+          orgUnits = this.appendOrgUnitsFromServerToOrgUnitArray(orgUnits,response);
+          if(counts == orgUnitIds.length){
+            resolve(orgUnits);
+          }
+        },error=>{
+          reject(error);
+        })
+      }
+    });
+  } 
+  
+  
 
   /**
    * appendOrgUnitsFromServerToOrgUnitArray
