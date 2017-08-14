@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>OBGYN Forms</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid>
+  <ion-row>
+    <ion-col col-3><button ion-button ></button><ion-label>Objectives</ion-label></ion-col>
+	<ion-col col-3><button ion-button ></button><ion-label>Core Competencies</ion-label></ion-col>
+	<ion-col col-3><button ion-button ></button><ion-label>Conditions </ion-label></ion-col>
+  </ion-row>
+  <ion-row>
+        <ion-col col-3><button ion-button (click) = "pushobgynProcedureForm()"></button><ion-label>Procedures</ion-label></ion-col>
+	<ion-col col-3><button ion-button (click) = "pushdomainEthicalIssues()" ></button><ion-label>Ethical Issues</ion-label></ion-col>
+	<ion-col col-3><button ion-button (click) = "pushdomainConditionsExposed()" ></button><ion-label>Conditions/Procedures</ion-label></ion-col>
+  </ion-row>
+   <ion-row>
+        <ion-col col-3><button ion-button (click) = "pushdomainMortalityMobidity()" ></button><ion-label>M&M Meetings</ion-label></ion-col>
+	<ion-col col-3><button ion-button (click) = "pushcpdActivities()" ></button><ion-label>CPD</ion-label></ion-col>
+	<ion-col col-3><button ion-button (click) = "pushdomainSurvey()" ></button><ion-label>Survey</ion-label></ion-col>
+  </ion-row>
+     <ion-row>
+        <ion-col col-3><button ion-button (click) = "pushdomainForm139()" ></button><ion-label>Form 139</ion-label></ion-col>
+	<ion-col col-3><button ion-button (click) = "pushdomainSignOff()" ></button><ion-label>Domain Sign Off</ion-label></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

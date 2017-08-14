@@ -48,6 +48,7 @@ import {DomainCoreCompetencies} from '../pages/domain-core-competencies/domain-c
 import {DomainObjective} from '../pages/domain-objective/domain-objective';
 import {ObgynProcedureForm} from '../pages/obgyn-procedure-form/obgyn-procedure-form';
 import {ObgynProcedureFormList} from '../pages/obgyn-procedure-form-list/obgyn-procedure-form-list';
+import {ObgynForms} from '../pages/obgyn-forms/obgyn-forms';
 
 
 @NgModule({
@@ -66,7 +67,7 @@ import {ObgynProcedureFormList} from '../pages/obgyn-procedure-form-list/obgyn-p
 	SiteInfo,
 	ObgynProcedureForm,
 	DomainSignOff, DomainForm139, DomainSurvey, CpdActivities, DomainMortalityMobidity, DomainConditionsExposed, DomainEthicalIssues, DomainRelevantProcedures, DomainRelevantConditions, DomainCoreCompetencies, DomainObjective,
-	ObgynProcedureFormList,
+	ObgynProcedureFormList,ObgynForms,
   ],
   imports: [
     BrowserModule,
@@ -89,7 +90,7 @@ import {ObgynProcedureFormList} from '../pages/obgyn-procedure-form-list/obgyn-p
     SiteInfo,
 	ObgynProcedureForm,
 	DomainSignOff, DomainForm139, DomainSurvey, CpdActivities, DomainMortalityMobidity, DomainConditionsExposed, DomainEthicalIssues, DomainRelevantProcedures, DomainRelevantConditions, DomainCoreCompetencies, DomainObjective,
-	ObgynProcedureFormList,
+	ObgynProcedureFormList,ObgynForms,
   ],
   providers: [
   StatusBar,
