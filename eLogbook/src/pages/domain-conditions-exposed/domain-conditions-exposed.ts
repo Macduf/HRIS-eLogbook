@@ -36,7 +36,6 @@ this.organisationUnits = [];
 this.dataElements = []; 
   }
  
-
   
   ngOnInit() { 
   let fields = "fields=[:all],userCredentials[userRoles[name,dataSets[id,name],programs[id,name]]";
@@ -54,14 +53,12 @@ this.dataElements = [];
       .toPromise()
       .then(this.extractData)
       .catch(this.handleError);
-  }  
-  
+  }    
   
     private extractData(res: Response) {
         let body = res.json();
         return body || {};
-    }
-	
+    }	
 	
 	    private handleError(error: any): Promise<any> {
         console.error('An error occurred', error);

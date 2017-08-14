@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/build/generated/source/buildConfig/release"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/build/generated/source/r/debug"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/build/generated/source/r/release"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/cordova/node_modules/properties-parser/test"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/CordovaLib/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/CordovaLib/build/generated/source/buildConfig/release"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/CordovaLib/src"/>
+	<classpathentry kind="src" path="eLogbook/platforms/android/src"/>
+	<classpathentry kind="src" path="eLogbook/plugins/cordova-sqlite-storage/src/android"/>
+	<classpathentry kind="lib" path="eLogbook/node_modules/@ionic/app-scripts/bin/closure-compiler.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/release/jars/classes.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/jniLibs/debug/sqlite-connector.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/jniLibs/release/sqlite-connector.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_1f0d50ca551f23545ba9b00e01a2d108761631b7.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/pre-dexed/debug/debug_162c25b03465a4d061af60e6e66bda4edb9939e5.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/pre-dexed/debug/sqlite-connector_0fa5f033bac2d911eb1b29720cfa87ebfd3493c2.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/pre-dexed/release/CordovaLib-unspecified-release_d6cc1442abc02b014a4bbbddb7b69d44cf1faa18.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/pre-dexed/release/release_2b651e3649b42aea975b2d5826bc95c588b53cab.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/build/intermediates/pre-dexed/release/sqlite-connector_0fa5f033bac2d911eb1b29720cfa87ebfd3493c2.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/CordovaLib/build/intermediates/bundles/release/classes.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="eLogbook/platforms/android/libs/sqlite-connector.jar"/>
+	<classpathentry kind="lib" path="eLogbook/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/sqlite-connector.jar"/>
+	<classpathentry kind="output" path="eLogbook/platforms/android/CordovaLib/build/intermediates/classes/debug"/>
+</classpath>
