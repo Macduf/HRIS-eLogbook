@@ -49,7 +49,14 @@ import {DomainObjective} from '../pages/domain-objective/domain-objective';
 import {ObgynProcedureForm} from '../pages/obgyn-procedure-form/obgyn-procedure-form';
 import {ObgynProcedureFormList} from '../pages/obgyn-procedure-form-list/obgyn-procedure-form-list';
 import {ObgynForms} from '../pages/obgyn-forms/obgyn-forms';
-
+import {AnaesthesiologyForms} from '../pages/anaesthesiology-forms/anaesthesiology-forms';
+import {GeneralEthics} from '../pages/general-ethics/general-ethics';
+import {GeneralmedicineForms} from '../pages/generalmedicine-forms/generalmedicine-forms';
+import {OrthopaedicsForms} from '../pages/orthopaedics-forms/orthopaedics-forms';
+import {PsychiatryForms} from '../pages/psychiatry-forms/psychiatry-forms';
+import {GeneralsurgeryForms} from '../pages/generalsurgery-forms/generalsurgery-forms';
+import {FamilymedicineForms} from '../pages/familymedicine-forms/familymedicine-forms';
+import {PaediatricsForms} from '../pages/paediatrics-forms/paediatrics-forms';
 
 @NgModule({
   declarations: [
@@ -67,7 +74,7 @@ import {ObgynForms} from '../pages/obgyn-forms/obgyn-forms';
 	SiteInfo,
 	ObgynProcedureForm,
 	DomainSignOff, DomainForm139, DomainSurvey, CpdActivities, DomainMortalityMobidity, DomainConditionsExposed, DomainEthicalIssues, DomainRelevantProcedures, DomainRelevantConditions, DomainCoreCompetencies, DomainObjective,
-	ObgynProcedureFormList,ObgynForms,
+	ObgynProcedureFormList,ObgynForms, AnaesthesiologyForms, GeneralEthics, GeneralmedicineForms, OrthopaedicsForms, PsychiatryForms, GeneralsurgeryForms, FamilymedicineForms, PaediatricsForms,
   ],
   imports: [
     BrowserModule,
@@ -90,7 +97,7 @@ import {ObgynForms} from '../pages/obgyn-forms/obgyn-forms';
     SiteInfo,
 	ObgynProcedureForm,
 	DomainSignOff, DomainForm139, DomainSurvey, CpdActivities, DomainMortalityMobidity, DomainConditionsExposed, DomainEthicalIssues, DomainRelevantProcedures, DomainRelevantConditions, DomainCoreCompetencies, DomainObjective,
-	ObgynProcedureFormList,ObgynForms,
+	ObgynProcedureFormList,ObgynForms, AnaesthesiologyForms, GeneralEthics, GeneralmedicineForms, OrthopaedicsForms, PsychiatryForms, GeneralsurgeryForms, FamilymedicineForms, PaediatricsForms
   ],
   providers: [
   StatusBar,

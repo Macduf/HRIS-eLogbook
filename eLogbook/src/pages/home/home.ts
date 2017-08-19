@@ -15,8 +15,14 @@ import {DomainCoreCompetencies} from '../../pages/domain-core-competencies/domai
 import {DomainObjective} from '../../pages/domain-objective/domain-objective';
 import {ObgynProcedureFormList} from '../../pages/obgyn-procedure-form-list/obgyn-procedure-form-list';
 import {ObgynForms} from '../../pages/obgyn-forms/obgyn-forms';
-
-
+import {AnaesthesiologyForms} from '../../pages/anaesthesiology-forms/anaesthesiology-forms';
+import {GeneralEthics} from '../../pages/general-ethics/general-ethics';
+import {GeneralmedicineForms} from '../../pages/generalmedicine-forms/generalmedicine-forms';
+import {OrthopaedicsForms} from '../../pages/orthopaedics-forms/orthopaedics-forms';
+import {PsychiatryForms} from '../../pages/psychiatry-forms/psychiatry-forms';
+import {GeneralsurgeryForms} from '../../pages/generalsurgery-forms/generalsurgery-forms';
+import {FamilymedicineForms} from '../../pages/familymedicine-forms/familymedicine-forms';
+import {PaediatricsForms} from '../../pages/paediatrics-forms/paediatrics-forms';
 
 
 @Component({
@@ -38,8 +44,16 @@ export class HomePage {
  domainObjective: any;
  obgynProcedureFormList: any;
  obgynForms: any;
-
-  constructor(public navCtrl: NavController) {
+anaesthesiologyForms: any;
+generalEthics: any;
+generalmedicineForms: any;
+orthopaedicsForms: any;
+psychiatryForms: any;
+generalsurgeryForms: any;
+familymedicineForms: any;
+paediatricsForms: any;
+ 
+constructor(public navCtrl: NavController) {
     
     
  this.domainSignOff = DomainSignOff;
@@ -56,6 +70,14 @@ export class HomePage {
  this.obgynProcedureFormList = ObgynProcedureFormList;  
   
   this.obgynForms = ObgynForms;
+  this.anaesthesiologyForms = AnaesthesiologyForms;
+  this.generalEthics = GeneralEthics;
+  this.generalmedicineForms = GeneralmedicineForms;
+  this.orthopaedicsForms = OrthopaedicsForms;
+  this.psychiatryForms = PsychiatryForms;
+  this.generalsurgeryForms = GeneralsurgeryForms;
+  this.familymedicineForms = FamilymedicineForms;
+  this.paediatricsForms = PaediatricsForms;
 
   }
   
@@ -66,4 +88,34 @@ export class HomePage {
     this.navCtrl.push(this.obgynForms);
   }
 
+  pushanaesthesiologyForms(){
+    this.navCtrl.push(this.anaesthesiologyForms);
+  }
+
+  pushgeneralEthics(){
+    this.navCtrl.push(this.generalEthics);
+  }
+pushgeneralmedicineForms(){
+  this.navCtrl.push(GeneralmedicineForms);
+}
+
+pushorthopaedicsForms(){
+  this.navCtrl.push(this.orthopaedicsForms);
+}
+
+pushpsychiatryForms(){
+  this.navCtrl.push(this.psychiatryForms);
+}
+
+pushgeneralsurgeryForms(){
+  this.navCtrl.push(this.generalsurgeryForms);
+}
+
+pushfamilymedicineForms(){
+  this.navCtrl.push(this.familymedicineForms);
+}
+
+pushpaediatricsForms(){
+  this.navCtrl.push(this.paediatricsForms);
+}
 }
